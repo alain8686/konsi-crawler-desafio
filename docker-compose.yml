@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  flask_api:
+    build: .
+    image: "scraper"
+    ports:
+      - "90:9000"
+  flask_api_test:
+    build: .
+    image: "scraper"
+    command: python -m unittest2 discover
+  worker:
+    image: "scraper"
+    command: rq worker --name worker --url redis://crawler:Crawler1+1@redis-17203.c10.us-east-1-4.ec2.cloud.redislabs.com:17203/alain-test-redis

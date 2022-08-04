@@ -1,0 +1,8 @@
+flask
+flask_cors
+scrapy
+rq
+redis
+werkzeug
+gunicorn
+unittest2
