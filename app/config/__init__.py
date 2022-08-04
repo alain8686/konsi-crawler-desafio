@@ -1,6 +1,6 @@
 
 #WTF_CSRF_ENABLED = True
-REDIS_URL = "redis://crawler:Crawler1+1@redis-17203.c10.us-east-1-4.ec2.cloud.redislabs.com:17203/alain-test-redis"
+REDIS_URL = "redis://crawler:Password@redis-17203.c10.us-east-1-4.ec2.cloud.redislabs.com:17203/alain-test-redis"
 QUEUES = ["default"]
 
 login_url = "http://extratoblubeapp-env.eba-mvegshhd.sa-east-1.elasticbeanstalk.com/login"
